@@ -19,7 +19,7 @@ const client = new MultiServerMCPClient({
 const tools = await client.getTools();
 
 const llmForTool = new ChatOllama({
-  model: "llama3-groq-tool-use",
+  model: "llama3.2",
 });
 
 const llmWithTools = llmForTool.bindTools(tools);
