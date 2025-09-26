@@ -11,14 +11,22 @@
   "dependencies": {
     "@langchain/community": "^0.3.55",
     "@langchain/core": "^0.3.73",
+    "@langchain/google-genai": "^0.2.18",
+    "@langchain/langgraph": "^0.4.9",
     "@langchain/mcp-adapters": "^0.6.0",
     "@langchain/ollama": "^0.2.4",
     "@langchain/tavily": "^0.1.5",
-    "dotenv": "^17.2.2",
+    "@langchain/textsplitters": "^0.1.0",
+    "dotenv": "^16.6.1",
     "langchain": "^0.3.32",
+    "openai": "^4.62.1",
     "opik": "^1.8.46",
     "opik-langchain": "^1.0.4",
-    "zod": "^4.1.5"
+    "pdf-parse": "^1.1.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.6"
   },
   "packageManager": "pnpm@9.15.0"
 }
