@@ -26,6 +26,9 @@ importers:
       '@langchain/ollama':
         specifier: ^0.2.4
         version: 0.2.4(@langchain/core@0.3.73(openai@4.104.0(ws@8.18.3)(zod@3.25.76)))
+      '@langchain/openai':
+        specifier: ^0.6.13
+        version: 0.6.13(@langchain/core@0.3.73(openai@4.104.0(ws@8.18.3)(zod@3.25.76)))(ws@8.18.3)
       '@langchain/tavily':
         specifier: ^0.1.5
         version: 0.1.5(@langchain/core@0.3.73(openai@4.104.0(ws@8.18.3)(zod@3.25.76)))
@@ -694,8 +697,8 @@ packages:
     peerDependencies:
       '@langchain/core': '>=0.3.58 <0.4.0'
 
-  '@langchain/openai@0.6.11':
-    resolution: {integrity: sha512-BkaudQTLsmdt9mF6tn6CrsK2TEFKk4EhAWYkouGTy/ljJIH/p2Nz9awIOGdrQiQt6AJ5mvKGupyVqy3W/jim2Q==}
+  '@langchain/openai@0.6.13':
+    resolution: {integrity: sha512-+QCVag3J2MeFxLMPjjYYpDCBKbmrK7D/xQGq+iWBGpNSg/08vnx7pEkkhiL2NTFIHiYu7w/7EG3UHQ8gOK/cag==}
     engines: {node: '>=18'}
     peerDependencies:
       '@langchain/core': '>=0.3.68 <0.4.0'
@@ -2064,7 +2067,7 @@ snapshots:
       '@browserbasehq/stagehand': 1.14.0(@playwright/test@1.55.0)(deepmerge@4.3.1)(dotenv@16.6.1)(openai@4.104.0(ws@8.18.3)(zod@3.25.76))(zod@3.25.76)
       '@ibm-cloud/watsonx-ai': 1.6.12
       '@langchain/core': 0.3.73(openai@4.104.0(ws@8.18.3)(zod@3.25.76))
-      '@langchain/openai': 0.6.11(@langchain/core@0.3.73(openai@4.104.0(ws@8.18.3)(zod@3.25.76)))(ws@8.18.3)
+      '@langchain/openai': 0.6.13(@langchain/core@0.3.73(openai@4.104.0(ws@8.18.3)(zod@3.25.76)))(ws@8.18.3)
       '@langchain/weaviate': 0.2.2(@langchain/core@0.3.73(openai@4.104.0(ws@8.18.3)(zod@3.25.76)))
       binary-extensions: 2.3.0
       expr-eval: 2.0.2
@@ -2175,7 +2178,7 @@ snapshots:
       ollama: 0.5.17
       uuid: 10.0.0
 
-  '@langchain/openai@0.6.11(@langchain/core@0.3.73(openai@4.104.0(ws@8.18.3)(zod@3.25.76)))(ws@8.18.3)':
+  '@langchain/openai@0.6.13(@langchain/core@0.3.73(openai@4.104.0(ws@8.18.3)(zod@3.25.76)))(ws@8.18.3)':
     dependencies:
       '@langchain/core': 0.3.73(openai@4.104.0(ws@8.18.3)(zod@3.25.76))
       js-tiktoken: 1.0.21
@@ -2737,7 +2740,7 @@ snapshots:
       isstream: 0.1.2
       jsonwebtoken: 9.0.2
       mime-types: 2.1.35
-      retry-axios: 2.6.0(axios@1.11.0)
+      retry-axios: 2.6.0(axios@1.11.0(debug@4.4.1))
       tough-cookie: 4.1.4
     transitivePeerDependencies:
       - supports-color
@@ -2811,7 +2814,7 @@ snapshots:
   langchain@0.3.32(@langchain/core@0.3.73(openai@4.104.0(ws@8.18.3)(zod@3.25.76)))(@langchain/google-genai@0.2.18(@langchain/core@0.3.73(openai@4.104.0(ws@8.18.3)(zod@3.25.76))))(@langchain/ollama@0.2.4(@langchain/core@0.3.73(openai@4.104.0(ws@8.18.3)(zod@3.25.76))))(axios@1.11.0)(openai@4.104.0(ws@8.18.3)(zod@3.25.76))(ws@8.18.3):
     dependencies:
       '@langchain/core': 0.3.73(openai@4.104.0(ws@8.18.3)(zod@3.25.76))
-      '@langchain/openai': 0.6.11(@langchain/core@0.3.73(openai@4.104.0(ws@8.18.3)(zod@3.25.76)))(ws@8.18.3)
+      '@langchain/openai': 0.6.13(@langchain/core@0.3.73(openai@4.104.0(ws@8.18.3)(zod@3.25.76)))(ws@8.18.3)
       '@langchain/textsplitters': 0.1.0(@langchain/core@0.3.73(openai@4.104.0(ws@8.18.3)(zod@3.25.76)))
       js-tiktoken: 1.0.21
       js-yaml: 4.1.0
@@ -3115,7 +3118,7 @@ snapshots:
       onetime: 7.0.0
       signal-exit: 4.1.0
 
-  retry-axios@2.6.0(axios@1.11.0):
+  retry-axios@2.6.0(axios@1.11.0(debug@4.4.1)):
     dependencies:
       axios: 1.11.0(debug@4.4.1)
 
